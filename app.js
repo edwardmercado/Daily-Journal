@@ -69,9 +69,9 @@ app.get("/", function(req, res){
 
     if (results.length === 0){
         //saving the items using insertMany
-        Content.insertMany(defaultContent, function(err){
+        Content.insertMany(defaultContent, function(insertERR){
           if (err){
-              console.log(err)
+              console.log(insertERR)
           } else {
               console.log("Successfully added default contents to DB");
           }
