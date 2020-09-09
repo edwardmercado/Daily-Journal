@@ -1,14 +1,14 @@
 <%- include("partials/header") %>
 
-<h1>Home</h1>
-<p><%= homeContentText %> </p>
+<h1><%= homeContentTitle %></h1>
+<p><%= homeContentBody %></p>
 
 <div> 
      
     <% submittedPost.forEach(function (post){ %>
         <div>
-            <h3><%= post.title %></h3>
-            <p><%= post.body.substring(0, 100); %> ... <a href="/posts/<%= post.title %>" >Read More</a> </p>
+            <h3><%= post.contentTitle %></h3>
+            <p><%= post.contentBody.substring(0, 100); %> ... <a href="/posts/<%= post.contentTitle %>" >Read More</a> </p>
         </div>
     <% }) %>
 
