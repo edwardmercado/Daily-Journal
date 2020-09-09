@@ -18,9 +18,9 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 // const mongoURI = "mongodb://localhost:27017/blogDB";
 
-//const mongoURI = process.env.DB_URI;
+const mongoURI = process.env.DB_URI;
 
-const mongoURI = "mongodb+srv://admin-edward:Test123@blogcluster.akcze.mongodb.net/blogDB?retryWrites=true";
+
 
 mongoose.connect(mongoURI, {useNewUrlParser: true, useUnifiedTopology: true});
 
