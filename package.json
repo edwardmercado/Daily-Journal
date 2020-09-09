@@ -8,9 +8,6 @@
   },
   "author": "Edward Allen Mercado",
   "license": "ISC",
-  "engines": {
-    "node": "14.7.0"
-  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
@@ -18,5 +15,8 @@
     "lodash": "^4.17.20",
     "mongodb": "^3.6.1",
     "mongoose": "^5.10.3"
+  },
+  "engines": {
+    "node": "14.7.0"
   }
 }
