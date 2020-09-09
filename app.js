@@ -20,6 +20,8 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const mongoURI = process.env.DB_URI;
 
+//const mongoURI = "mongodb+srv://admin-edward:Test123@blogcluster.akcze.mongodb.net/blogDB?retryWrites=true";
+
 mongoose.connect(mongoURI, {useNewUrlParser: true});
 
 const defaultContentSchema = {
